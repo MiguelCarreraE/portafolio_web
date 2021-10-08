@@ -1,31 +1,119 @@
-@import url(‘https://fonts.googleapis.com/css2?family=Montserrat&fisplay=swap’);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+ #menu a{
+     color:#3f3f3f;
      
+ }
 
-}
-#menu a, button{
-    font-size: 18px !important;
-    font-weight: 600;
-   
-}
 
-#menu a{
-    color:#3f3f3f;
-    
-}
-.carousel-inner {
-    max-height:30rem !important;
-    max
-}
-#img-equipo{
+#img-equipo{ 
     max-height:30rem !important;
     width:50%;
-}  
-#Cara{
-    ),
-    "end": (
-      property: right,
-      class: end,
-      values: $position-values
+}
+
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color: #ff0000;
+    min-height:500px;
+    position:relative;
+}
+
+
+
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+
+@media (max-width:1200px){
+    #info, #Portafolio {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+
+
+
+@media (max-width:768px) {
+
+    #info, #imgg{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #Cosas {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
 }
